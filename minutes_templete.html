@@ -9,118 +9,114 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <h2 class="ttl">議事録テンプレート生成</h2>
-        <div class="point">
-          <p>*は必須項目です</p>
-        </div>
-        <div class="div">
-          <label class="label">施策名<span style="color: #da3c41">*</span></label>
-          <div class="cp_ipselect">
-            <select id="policyName" class="cp_sl02" required>
-              <option selected disabled>選択してください</option>
-              <option value="devCamp">devCamp</option>
-              <option value="kintone hack">kintone hack</option>
-              <option value="ヒアリングプロジェクト">ヒアリングプロジェクト</option>
-              <option value="kintone Dojo">kintone Dojo</option>
-              <option value="その他の共有・相談事項">その他の共有・相談事項</option>
-            </select>
-          </div>
-        </div>
-        <div class="text">
-          <label for="title" class="label">タイトル<span style="color: #da3c41">*</span></label>
-          <div><input type="text" id="title" required /></div>
-        </div>
-        <div class="div">
-          <label for="person" class="label"
-            >担当・報告者<span style="color: #da3c41">*</span></label
-          >
-          <div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeTeru" class="personInCharge" required />
-              <label for="personInChargeTeru">Teru</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInCharge53" class="personInCharge" required />
-              <label for="personInCharge53">53</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeShinShin" class="personInCharge" required />
-              <label for="personInChargeShinShin">しんしん</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeIwakun" class="personInCharge" required />
-              <label for="personInChargeIwakun">いわくん</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeYukatan" class="personInCharge" required />
-              <label for="personInChargeYukatan">ユカタン</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeGabe" class="personInCharge" required />
-              <label for="personInChargeGabe">がべ</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeKo" class="personInCharge" required />
-              <label for="personInChargeKo">ko</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeSari" class="personInCharge" required />
-              <label for="personInChargeSari">サーリー</label>
-            </div>
-            <div class="checkBox">
-              <input type="checkbox" id="personInChargeHao" class="personInCharge" required />
-              <label for="personInChargeHao">HAO</label>
-            </div>
-          </div>
-        </div>
-        <div class="text">
-          <div><label for="status" class="label">ステータス</label></div>
-          <input type="text" id="status" required />
-        </div>
-        <div class="point">
-          <p>↓開催日・日付はどちらか一方を入力してください</p>
-        </div>
-        <div class="dateDiv">
-          <div class="dateSelect">
-            <label for="date" class="datelabel">開催日</label>
-            <input type="date" id="date" required />
-          </div>
-          <div class="dateSelect">
-            <div><label for="term" class="datelabel">期間</label></div>
-            <div class="dateText">
-              <input type="date" id="term" required />
-              <span>まで</span>
-            </div>
-          </div>
-        </div>
-        <div class="div">
-          <div>
-            <label for="report" class="label"
-              >報告・相談<span style="color: #da3c41">*</span></label
-            >
-          </div>
-          <textarea
-            id="report"
-            class="textarea"
-            placeholder="マークダウン形式で記入してください"
-          ></textarea>
-        </div>
-        <div class="div">
-          <div><label for="nextAction" class="label">Next Action</label></div>
-          <textarea
-            id="nextAction"
-            class="textarea"
-            placeholder="マークダウン形式で記入してください"
-          ></textarea>
-        </div>
-        <div class="div">
-          <button data-micromodal-trigger="modal-1" role="button" id="button" class="btn-square">
-            生成する
-          </button>
+      <h2 class="ttl">議事録テンプレート生成</h2>
+    </header>
+    <main>
+      <div class="point">
+        <p>*は必須項目です</p>
+      </div>
+      <div class="div">
+        <label class="label">施策名<span style="color: #da3c41">*</span></label>
+        <div class="cp_ipselect">
+          <select id="policyName" class="cp_sl02" required>
+            <option selected disabled>選択してください</option>
+            <option value="devCamp">devCamp</option>
+            <option value="kintone hack">kintone hack</option>
+            <option value="ヒアリングプロジェクト">ヒアリングプロジェクト</option>
+            <option value="kintone Dojo">kintone Dojo</option>
+            <option value="その他の共有・相談事項">その他の共有・相談事項</option>
+          </select>
         </div>
       </div>
-    </header>
+      <div class="text">
+        <label for="title" class="label">タイトル</label>
+        <div><input type="text" id="title" required /></div>
+      </div>
+      <div class="div">
+        <label for="person" class="label">担当・報告者<span style="color: #da3c41">*</span></label>
+        <div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeTeru" class="personInCharge" required />
+            <label for="personInChargeTeru">Teru</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInCharge53" class="personInCharge" required />
+            <label for="personInCharge53">53</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeShinShin" class="personInCharge" required />
+            <label for="personInChargeShinShin">しんしん</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeIwakun" class="personInCharge" required />
+            <label for="personInChargeIwakun">いわくん</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeYukatan" class="personInCharge" required />
+            <label for="personInChargeYukatan">ユカタン</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeGabe" class="personInCharge" required />
+            <label for="personInChargeGabe">がべ</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeKo" class="personInCharge" required />
+            <label for="personInChargeKo">こうちゃん</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeSari" class="personInCharge" required />
+            <label for="personInChargeSari">サーリー</label>
+          </div>
+          <div class="checkBox">
+            <input type="checkbox" id="personInChargeHao" class="personInCharge" required />
+            <label for="personInChargeHao">HAO</label>
+          </div>
+        </div>
+      </div>
+      <div class="text">
+        <div><label for="status" class="label">ステータス</label></div>
+        <input type="text" id="status" required />
+      </div>
+      <div class="point">
+        <p>↓開催日・日付はどちらか一方を入力してください</p>
+      </div>
+      <div class="dateDiv">
+        <div class="dateSelect">
+          <label for="date" class="datelabel">開催日</label>
+          <input type="date" id="date" required />
+        </div>
+        <div class="dateSelect">
+          <div><label for="term" class="datelabel">期間</label></div>
+          <div class="dateText">
+            <input type="date" id="term" required />
+            <span>まで</span>
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div>
+          <label for="report" class="label">報告・相談<span style="color: #da3c41">*</span></label>
+        </div>
+        <textarea
+          id="report"
+          class="textarea"
+          placeholder="マークダウン形式で記入してください"
+        ></textarea>
+      </div>
+      <div class="div">
+        <div><label for="nextAction" class="label">Next Action</label></div>
+        <textarea
+          id="nextAction"
+          class="textarea"
+          placeholder="マークダウン形式で記入してください"
+        ></textarea>
+      </div>
+      <div class="div">
+        <button data-micromodal-trigger="modal-1" role="button" id="button" class="btn-square">
+          生成する
+        </button>
+      </div>
+    </main>
     <script>
       // フォーマット作成
       const createFormat = () => {
@@ -155,7 +151,13 @@
         const format = `
 ### ${policyName}
 
-${policyName === 'その他の共有・相談事項' ? `### ${title}` : `#### ◼︎ ${title}`}
+${
+  policyName === 'その他の共有・相談事項' && title
+    ? `### ${title}`
+    : title
+    ? `#### ◼︎ ${title}`
+    : ''
+}
 
 ##### 担当・報告者\n\n- ${personString}
 
@@ -227,7 +229,7 @@ ${nextAction ? `##### Next Action\n\n${nextAction}` : ''}`;
         const report = document.getElementById('report').value;
 
         // 必須項目が入力されていなかったらアラートを表示
-        if (policyName === '選択してください' || !title || !report || personInCharge.length === 0) {
+        if (policyName === '選択してください' || !report || personInCharge.length === 0) {
           window.alert('必須項目を入力してください');
           return;
         }

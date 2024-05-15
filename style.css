@@ -26,11 +26,11 @@ body {
 .cp_sl02 {
   position: relative;
   font-family: inherit;
-  background-color: transparent;
+  background-color: #fbfbfb;
   width: 100%;
   padding: 10px 10px 10px 0;
   font-size: 18px;
-  border-radius: 0;
+  border-radius: 4px;
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
